@@ -28,7 +28,6 @@ export const CountryList = ({
   const filteredCountries = useMemo(() => {
     return countries
       .filter((c) => {
-        console.log('country', c);
         const matchesSearch = c.id.toLowerCase().includes(searchQuery.toLowerCase());
         const matchesRegion = !selectedRegion || c.data.some((d) => d.region === selectedRegion);
         return matchesSearch && matchesRegion;
