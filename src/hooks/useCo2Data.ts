@@ -11,7 +11,6 @@ export const useCo2Data = () => {
       setIsLoading(true);
       try {
         const res = await fetch('/data/owid-co2-data.json');
-
         if (!res.ok) {
           throw new Error('Failed to fetch CO2 data');
         }
