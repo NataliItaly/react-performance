@@ -68,6 +68,7 @@ export const App = () => {
   }, []);
 
   if (isLoading) {
+    console.log(isLoading);
     return <LoadingSpinner />;
   }
 
